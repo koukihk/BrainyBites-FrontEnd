@@ -7,16 +7,16 @@
             <span>{{ dataTransfer }}</span>
         </div>
         <div class="content" v-html="articleMain.artContent"></div>
-        <!--<div class="up-down clear-float">-->
-        <!--    <div class="up">-->
-        <!--        <img :src='control.art.up' @click="cusLikeArt"/>-->
-        <!--        <span>{{ articleMain.artLikeNum }}</span>-->
-        <!--    </div>-->
-        <!--    <div class="down">-->
-        <!--        <img :src="control.art.down" @click="cusDislikeArt"/>-->
-        <!--        <span>{{ articleMain.artDislikeNum }}</span>-->
-        <!--    </div>-->
-        <!--</div>-->
+        <div class="up-down clear-float">
+           <div class="up">
+               <img :src='control.art.up' @click="cusLikeArt"/>
+               <span>{{ articleMain.artLikeNum }}</span>
+           </div>
+           <div class="down">
+               <img :src="control.art.down" @click="cusDislikeArt"/>
+               <span>{{ articleMain.artDislikeNum }}</span>
+           </div>
+        </div>
     </div>
 </template>
 
@@ -114,7 +114,6 @@
         display: inline-block;
         line-height: 30px;
         font-size: 20px;
-        float: right;
     }
 
     /*.el-icon-success {*/
@@ -136,7 +135,6 @@
         display: inline-block;
         line-height: 30px;
         font-size: 20px;
-        float: right;
     }
 
     /*.el-icon-error {*/

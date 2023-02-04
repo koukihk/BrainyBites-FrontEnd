@@ -57,7 +57,7 @@
      */
     export default {
         name: "CommentReplyCenter",
-        components: {ReplyMain, CommentReplyInput},
+        components: { ReplyMain, CommentReplyInput },
         props: ["comments", 'customer'],
         methods: {
             cancelMessage: function() {
@@ -139,7 +139,7 @@
                             this.$emit('quickShow');
                             // todo 这个地方要重新计算一遍位置
                         } else {
-                            this.$message.info("回复失败");
+                            this.$message.info("回复失败，请检查网络与登录状态");
                         }
                     });
                 this.control.add.type = -1;

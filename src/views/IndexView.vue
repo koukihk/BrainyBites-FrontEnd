@@ -37,6 +37,7 @@
     import { getCusBasicInfo } from "../control/Self";
     import { jumpInCurPage, jumpInNewPage } from "../util/PageJump";
 
+
     export default {
         name: 'IndexView',
         components: { HotArticle, EditEntrance, TinyArticle, TopBar, LeftMenu, BottomBar },
@@ -56,7 +57,7 @@
                     this.artTypes = response.data;
                 })
                 .then(() => {
-                    getTinyArtOnePageByType('综合', this.page.tinyPage, this.page.tinyPageSize)
+                    getTinyArtOnePageByType('推荐', this.page.tinyPage, this.page.tinyPageSize)
                         .then((response) => {
                             this.tinyArticles = response.data;
                         });
@@ -155,22 +156,22 @@
                     tinyPageSize: 10,
                     hotTitle: '大家都在看',
                     hotPage: 0,
-                    hotPageSize: 6
+                    hotPageSize: 5
                 },
-                artTypes: ['推荐', '时间线', '前端', '后端', '人工智能', '深度学习', '数据挖掘', '语言学习', '嵌入式', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
+                artTypes: ['推荐', '前端', '后端', '人工智能', '深度学习', '数据挖掘', '语言学习', '嵌入式','计算机图形学','网站建设'],
                 tinyArticles: [
                     {   artId: 1, artTitle: "即将开启降温模式",
-                        artAbstract:"降温降雨天气预报预计今晚到明天我州东北部地区阴天普遍有小雨，高山有雨夹雪和大雾，日平均气温下降4～6℃；州西南部晴转多云，局地间有阴天和零星小雨，气温下降2～4℃。请注意相关防御措施。未来24小时内，各县最低气温1℃～10℃，最高气温10～22℃。",
-                        artTime:"2019-11-25T08:35:55.000+0000",
-                        artImage:"",
+                        artAbstract: "降温降雨天气预报预计今晚到明天我州东北部地区阴天普遍有小雨，高山有雨夹雪和大雾，日平均气温下降4～6℃；州西南部晴转多云，局地间有阴天和零星小雨，气温下降2～4℃。请注意相关防御措施。未来24小时内，各县最低气温1℃～10℃，最高气温10～22℃。",
+                        artTime: "2019-11-25T08:35:55.000+0000",
+                        artImage: NP,
                         customer: {
-                            cusName:"光明网",
+                            cusName: "光明网",
                         }
                     },
                     {   artId: 2, artTitle: "即将开启升温模式",
-                        artAbstract:"降温降雨天气预报预计今晚到明天我州东北部地区阴天普遍有小雨，高山有雨夹雪和大雾，日平均气温下降4～6℃；州西南部晴转多云，局地间有阴天和零星小雨，气温下降2～4℃。请注意相关防御措施。未来24小时内，各县最低气温1℃～10℃，最高气温10～22℃。",
-                        artTime:"2019-11-25T08:35:55.000+0000",
-                        artImage:"",
+                        artAbstract: "降温降雨天气预报预计今晚到明天我州东北部地区阴天普遍有小雨，高山有雨夹雪和大雾，日平均气温下降4～6℃；州西南部晴转多云，局地间有阴天和零星小雨，气温下降2～4℃。请注意相关防御措施。未来24小时内，各县最低气温1℃～10℃，最高气温10～22℃。",
+                        artTime: "2019-11-25T08:35:55.000+0000",
+                        artImage: NP,
                         customer: {
                             cusName:"光明网",
                         }

@@ -1,7 +1,7 @@
 <template>
     <float-card class="float-card clear-float">
         <div class="image" v-if="tinyArticle.artImageUrl !== ''">
-            <img :src="tinyArticle.artImageUrl" >
+            <img :src="tinyArticle.artImageUrl" />
         </div>
         <div class="word" :class="[wideSwitch ? tinyArt : tinyArtWide]">
             <div class="title" @click="jumpToArticle(tinyArticle.artId)">{{ tinyArticle.artTitle }}</div>

@@ -1,13 +1,14 @@
 <template>
     <div class="clear-float">
-        <div class="body-image"  v-on:click="jumpToIndex">
+        <div class="body-image" v-on:click="jumpToIndex">
             <img src="@/assets/image/Logo.png"/>
         </div>
         <search-panel :tip="tip"  v-on:search="searchArticles"></search-panel>
         <div class="manage">
-            <img v-if="customer.cusAvatarUrl !== ''" :src="customer.cusAvatarUrl" v-on:click="jumpToSelf"/>
-            <img v-if="customer.cusAvatarUrl === ''" :src="ImgSrc" v-on:click="jumpToSelf"/>
-            <el-button type="text" @click="loginOut">退出登录</el-button>
+            <img v-if="loginState" :src="customer.cusAvatarUrl"  v-on:click="jumpToSelf"/>
+            <el-button v-if="loginState" type="text" @click="loginOut">退出登录</el-button>
+            <img v-if="!loginState" :src="ImgSrc"  v-on:click="jumpToSelf"/>
+            <el-button v-if="!loginState" type="text" @click="loginIn">登录</el-button>
         </div>
     </div>
 </template>
@@ -15,19 +16,30 @@
 <script>
     import SearchPanel from '../common/SearchPanel'
     import SampleImg from '../../assets/image/Sample.png'
-    import {jumpInCurPage, jumpInNewPage} from "../../util/PageJump";
-    import {quitLogin} from "../../control/Self";
+    import { jumpInCurPage, jumpInNewPage } from "../../util/PageJump";
+    import { quitLogin } from "../../control/Self";
 
     export default {
         name: 'TopBar',
-        props: ['customer'],
+        props: ['message', 'customer'],
         components: {SearchPanel},
+        computed: {
+            loginState() {
+                if(JSON.stringify(this.customer) === '{}') {
+                    return false
+                }else {
+                    return true
+                }
+            }
+        },
         methods: {
             jumpToIndex: function() {
                 jumpInCurPage('/index/');
             },
             jumpToSelf: function() {
-                jumpInNewPage('/self/' + this.customer.cusId)
+                if(this.loginState) {
+                    jumpInNewPage('/self/' + this.customer.cusId)
+                }
             },
             searchArticles: function (message) {
                 jumpInNewPage('/search/' + message )
@@ -40,8 +52,10 @@
                             this.$router.push({path: '/port'});
                         }
                     })
+            },
+            loginIn: function () {
+                jumpInNewPage('/port/')
             }
-
         },
         data: function() {
             return {
@@ -57,7 +71,6 @@
     .body-image {
         float: left;
         height: 40px;
-        margin-top: 5px;
     }
 
     .body-image img {

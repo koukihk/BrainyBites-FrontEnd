@@ -1,7 +1,6 @@
 <template>
     <div>
         <header><top-bar class="top-bar" :customer="customer"></top-bar></header>
-
         <main>
             <!-- section 1 包含 用户的个人信息-->
             <section>
@@ -25,11 +24,11 @@
     import ShowPanel from "../components/self/EditorMain";
     import TinyCenter from "../components/self/TinyCenter"
     import RightMenu from "../components/self/RightMenu";
-    import {checkCusFollow, getCusBasicInfo, getCusFeatureInfo, getCusSelfDynamic} from "../control/Self";
-    import {jumpInCurPage} from "../util/PageJump";
+    import { checkCusFollow, getCusBasicInfo, getCusFeatureInfo, getCusSelfDynamic } from "../control/Self";
+    import { jumpInCurPage } from "../util/PageJump";
     export default {
         name: "SelfView",
-        components: {RightMenu, TinyCenter, ShowPanel, TopBar},
+        components: { RightMenu, TinyCenter, ShowPanel, TopBar },
         mounted: function() {
             window.addEventListener('scroll', this.scrollHandler, false);
             let cusId = this.$route.params.cusId;
