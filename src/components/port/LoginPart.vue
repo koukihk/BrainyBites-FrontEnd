@@ -8,8 +8,12 @@
             <el-form-item label="密码" prop="pass">
                 <el-input type="password" v-model="ruleForm.pass" autocomplete="off" placeholder="PASSWORD"></el-input>
             </el-form-item>
+            <div>
+                <Vcode :show="captcha.isShow" @success="onSuccess" @close="onClose" />
+            </div>
             <el-form-item>
-                <el-button type="primary" @click="cusLogin()">登录</el-button>
+                <el-button v-if="!captcha.isAccess" type="primary" @click="captcha.isShow = true">开始验证</el-button>
+                <el-button v-if="captcha.isAccess" type="primary" @click="cusLogin()">登录</el-button>
                 <el-button @click="cusRegister()">注册</el-button>
             </el-form-item>
         </el-form>
@@ -19,9 +23,11 @@
 <script>
     import { cusLogin } from "../../control/Self";
     import { jumpInCurPage } from "../../util/PageJump";
+    import Vcode from "vue-puzzle-vcode";
 
     export default {
         name: "LoginPart.vue",
+        components: { Vcode },
         methods: {
             cusLogin() {
                 cusLogin(this.ruleForm.name, this.ruleForm.pass)
@@ -38,6 +44,14 @@
             },
             cusRegister() {
                 this.$emit('changePanel');
+            },
+            onSuccess() {
+                this.captcha.isShow = false;
+                this.captcha.isAccess = true;
+            },
+            onClose() {
+                this.captcha.isShow = false;
+                this.captcha.isAccess = false;
             }
         },
         data: function () {
@@ -75,6 +89,10 @@
                             trigger: 'blur'
                         }
                     ],
+                },
+                captcha: {
+                    isShow: false,
+                    isAccess: false
                 }
             };
         },

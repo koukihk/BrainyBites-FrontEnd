@@ -11,8 +11,12 @@
             <el-form-item label="确认密码" prop="checkPass">
                 <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off" placeholder="PASSWORD REPEATED"></el-input>
             </el-form-item>
+            <div>
+                <Vcode :show="captcha.isShow" @success="onSuccess" @close="onClose" />
+            </div>
             <el-form-item>
-                <el-button type="primary" @click="cusRegister()">注册</el-button>
+                <el-button v-if="!captcha.isAccess" type="primary" @click="captcha.isShow = true">开始验证</el-button>
+                <el-button v-if="captcha.isAccess" type="primary" @click="cusRegister()">注册</el-button>
                 <el-button @click="cusLogin()">有账号了, 去登录</el-button>
             </el-form-item>
         </el-form>
@@ -21,9 +25,11 @@
 
 <script>
     import { cusRegister } from "../../control/Self";
+    import Vcode from "vue-puzzle-vcode";
 
     export default {
         name: "RegisterPart.vue",
+        components: { Vcode },
         methods: {
             cusRegister: function() {
                 if (this.ruleForm.pass !== this.ruleForm.checkPass) {
@@ -44,6 +50,14 @@
             },
             cusLogin: function () {
                 this.$emit('changePanel');
+            },
+            onSuccess() {
+                this.captcha.isShow = false;
+                this.captcha.isAccess = true;
+            },
+            onClose() {
+                this.captcha.isShow = false;
+                this.captcha.isAccess = false;
             }
         },
         data: function () {
@@ -101,6 +115,10 @@
                             trigger: 'blur'
                         }
                     ]
+                },
+                captcha: {
+                    isShow: false,
+                    isAccess: false
                 }
             };
         },

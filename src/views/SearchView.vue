@@ -24,7 +24,7 @@
     import TinyArticle from "../components/common/TinyArticle";
     // import RightMenu from "../components/index/RightMenu";
 
-    import Logo from '../assets/image/Logo.png'
+    import NP from '../assets/image/NP.png'
     import { getHotArtOnePage } from "../control/Load";
     import { searchContentSimple } from "../control/Search";
     import { getCusBasicInfo } from "../control/Self";
@@ -33,7 +33,7 @@
 
     export default {
         name: "SearchView",
-        components: {TinyArticle, HotArticle, EditEntrance, TopBar},
+        components: { TinyArticle, HotArticle, EditEntrance, TopBar },
         mounted: function () {
             window.addEventListener('scroll', this.getMoreTinyArt, false);
             let key = this.$route.params.key;
@@ -123,12 +123,12 @@
 
                 ],
                 hotArticles: [
-                    { artId: '1', artTitle: 'This is the template title of news', artImageUrl: Logo},
+                    { artId: '1', artTitle: 'This is the template title of news', artImageUrl: NP},
                     { artId: '2', artTitle: 'This is the template title of news', artImageUrl: ''},
                     { artId: '3', artTitle: 'This is the template title of news', artImageUrl: ''},
-                    { artId: '4', artTitle: 'This is the template title of news', artImageUrl: Logo},
-                    { artId: '5', artTitle: 'This is the template title of news', artImageUrl: Logo},
-                    { artId: '6', artTitle: 'This is the template title of news', artImageUrl: Logo},
+                    { artId: '4', artTitle: 'This is the template title of news', artImageUrl: NP},
+                    { artId: '5', artTitle: 'This is the template title of news', artImageUrl: NP},
+                    { artId: '6', artTitle: 'This is the template title of news', artImageUrl: NP},
                 ],
                 customer: {
 

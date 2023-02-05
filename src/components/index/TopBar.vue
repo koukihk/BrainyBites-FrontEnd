@@ -78,7 +78,7 @@
     .body-image img {
         height: 48px;
         width: 170px;
-        
+        cursor: pointer;
     }
 
     .manage {
@@ -98,6 +98,7 @@
         height: 30px;
         /*padding: 5px 10px;*/
         margin-right: 5px;
+        cursor: pointer;
     }
 
 </style>

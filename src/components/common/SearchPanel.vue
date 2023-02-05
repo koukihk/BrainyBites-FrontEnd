@@ -1,7 +1,7 @@
 <template>
     <div class="search">
         <el-input v-model="message" placeholder="请输入内容"></el-input>
-        <el-button type="primary" @click="search">{{tip}}</el-button>
+        <el-button type="primary" @click="search">{{ tip }}</el-button>
     </div>
 </template>
 
