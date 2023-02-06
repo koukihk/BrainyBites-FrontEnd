@@ -4677,7 +4677,7 @@
     "inherits" "^2.0.3"
     "minimalistic-assert" "^1.0.1"
 
-"he@^1.1.0", "he@1.2.x":
+"he@^1.2.0", "he@1.2.x":
   "integrity" "sha1-hK5l+n6vsWX922FWauFLrwVmTw8="
   "resolved" "https://registry.npm.taobao.org/he/download/he-1.2.0.tgz"
   "version" "1.2.0"
@@ -9322,13 +9322,13 @@
     "hash-sum" "^1.0.2"
     "loader-utils" "^1.0.2"
 
-"vue-template-compiler@^2.0.0", "vue-template-compiler@^2.6.10":
-  "integrity" "sha1-wEcE749JixUxMAGJk+VjCdRpgIA="
-  "resolved" "https://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.6.11.tgz?cache=0&sync_timestamp=1576267389403&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-template-compiler%2Fdownload%2Fvue-template-compiler-2.6.11.tgz"
-  "version" "2.6.11"
+"vue-template-compiler@^2.0.0", "vue-template-compiler@^2.7.14":
+  "integrity" "sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ=="
+  "resolved" "https://registry.npmmirror.com/vue-template-compiler/-/vue-template-compiler-2.7.14.tgz"
+  "version" "2.7.14"
   dependencies:
     "de-indent" "^1.0.2"
-    "he" "^1.1.0"
+    "he" "^1.2.0"
 
 "vue-template-es2015-compiler@^1.9.0":
   "integrity" "sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU="

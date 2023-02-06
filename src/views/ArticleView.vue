@@ -74,7 +74,7 @@
                         this.hotArticles = response.data;
                     })
                     .catch( () => {
-                        this.$message.info("未能成功获取数据，请检查网络连接~");
+                        this.$message.info("未能成功获取数据，请检查网络连接");
                     });
             },
 

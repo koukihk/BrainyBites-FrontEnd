@@ -37,7 +37,6 @@
     import { getCusBasicInfo } from "../control/Self";
     import { jumpInCurPage, jumpInNewPage } from "../util/PageJump";
 
-
     export default {
         name: 'IndexView',
         components: { HotArticle, EditEntrance, TinyArticle, TopBar, LeftMenu, BottomBar },
@@ -107,7 +106,7 @@
                         this.hotArticles = response.data;
                     })
                     .catch(() => {
-                        this.$message.info("未能成功获取数据，请检查网络连接~");
+                        this.$message.info("未能成功获取数据，请检查网络连接");
                     });
             },
 

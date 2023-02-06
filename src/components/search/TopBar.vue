@@ -34,7 +34,7 @@
         },
         methods: {
             jumpToIndex: function() {
-                jumpInCurPage('/index/');
+                jumpInCurPage('/');
             },
             jumpToSelf: function() {
                 if(this.loginState) {

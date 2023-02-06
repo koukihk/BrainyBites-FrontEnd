@@ -8,7 +8,6 @@ import 'normalize.css/normalize.css'
 import 'font-awesome/css/font-awesome.min.css'
 import router from './router'
 
-
 Vue.use(ElementUI, { locale });
 
 Vue.config.productionTip = false;

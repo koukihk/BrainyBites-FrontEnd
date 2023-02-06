@@ -16,7 +16,14 @@
         props: ['tip'],
         methods: {
             search: function () {
-                this.$emit('search', this.message);
+                if(this.message) {
+                    this.$emit('search', this.message);
+                }else {
+                    this.$notify.error({
+                        title: '错误',
+                        message: '搜索内容不可为空'
+                    });
+                }
             }
         },
         data: function () {

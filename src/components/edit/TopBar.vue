@@ -22,7 +22,7 @@
     export default {
         name: 'TopBar',
         props: ['message', 'customer'],
-        components: {SearchPanel},
+        components: { SearchPanel },
         computed: {
             loginState() {
                 if(JSON.stringify(this.customer) === '{}') {
@@ -34,7 +34,7 @@
         },
         methods: {
             jumpToIndex: function() {
-                jumpInCurPage('/index/');
+                jumpInCurPage('/');
             },
             jumpToSelf: function() {
                 if(this.loginState) {

@@ -14,32 +14,38 @@ const routes = [
   {
     path: '/',
     name: 'IndexView',
-    component: IndexView
+    component: IndexView,
+    meta: { title: "首页 | Brainy Bites" }
   },
   {
     path: '/search/:key',
     name: 'SearchView',
-    component: SearchView
+    component: SearchView,
+    meta: { title: "搜索 | Brainy Bites" }
   },
   {
     path: '/article/:artId',
     name: 'ArticleView',
-    component: ArticleView
+    component: ArticleView,
+    meta: { title: "文章 | Brainy Bites" }
   },
   {
     path: '/self/:cusId',
     name: 'SelfView',
-    component: SelfView
+    component: SelfView,
+    meta: { title: "我的 | Brainy Bites" }
   },
   {
     path: '/port',
     name: 'PortView',
-    component: PortView
+    component: PortView,
+    meta: { title: "认证 | Brainy Bites" }
   },
   {
     path: '/edit',
     name: 'EditView',
-    component: EditView
+    component: EditView,
+    meta: { title: "编辑 | Brainy Bites" }
   }
 
 ];
@@ -49,5 +55,9 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 });
+
+router.afterEach( (to) => {
+  document.title = to.meta.title
+})
 
 export default router
