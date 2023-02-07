@@ -1,6 +1,6 @@
 <template>
     <div class="port">
-        <img src="@/assets/image/boy.svg"/>
+        <img src="@/assets/image/Boy.svg"/>
         <div class="port-isolation"></div>
         <login-part v-if="page.loginShow" class="login-part" v-on:changePanel="changePanel"></login-part>
         <register-part v-if="!page.loginShow" class="register-part" v-on:changePanel="changePanel"></register-part>

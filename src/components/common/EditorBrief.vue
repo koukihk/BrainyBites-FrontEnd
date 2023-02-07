@@ -67,7 +67,7 @@
     }
 
     .editor:hover {
-        color: #339999;
+        color: #02abe9d1;
         cursor: pointer;
     }
 

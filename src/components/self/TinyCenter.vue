@@ -119,7 +119,7 @@
         display: flex;
         height: 40px;
         font-size: 20px;
-        color: #008080;
+        color: #88c0d0;
     }
 
     .span-a {
@@ -182,7 +182,7 @@
     }
 
     .title:hover {
-        color: #339999;
+        color: #02abe9d1;
         cursor: pointer;
     }
 
@@ -210,7 +210,6 @@
         text-align: left;
         font-size: 14px;
         position: static;
-        /*bottom: 0;*/
         color: #888888;
         margin-top: 10px;
     }
@@ -219,7 +218,6 @@
         text-align: left;
         font-size: 14px;
         position: static;
-        /*bottom: 0;*/
         color: #888888;
         margin-top: 10px;
     }
@@ -248,7 +246,7 @@
     }
 
     .customer:hover {
-        color: #339999;
+        color: #02abe9d1;
         cursor: pointer;
     }
 

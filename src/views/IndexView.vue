@@ -157,31 +157,10 @@
                     hotPage: 0,
                     hotPageSize: 5
                 },
-                artTypes: ['推荐', '前端', '后端', '人工智能', '深度学习', '数据挖掘', '语言学习', '嵌入式','计算机图形学','网站建设'],
-                tinyArticles: [
-                    {   artId: 1, artTitle: "即将开启降温模式",
-                        artAbstract: "降温降雨天气预报预计今晚到明天我州东北部地区阴天普遍有小雨，高山有雨夹雪和大雾，日平均气温下降4～6℃；州西南部晴转多云，局地间有阴天和零星小雨，气温下降2～4℃。请注意相关防御措施。未来24小时内，各县最低气温1℃～10℃，最高气温10～22℃。",
-                        artTime: "2019-11-25T08:35:55.000+0000",
-                        artImage: NP,
-                        customer: {
-                            cusName: "光明网",
-                        }
-                    },
-                    {   artId: 2, artTitle: "即将开启升温模式",
-                        artAbstract: "降温降雨天气预报预计今晚到明天我州东北部地区阴天普遍有小雨，高山有雨夹雪和大雾，日平均气温下降4～6℃；州西南部晴转多云，局地间有阴天和零星小雨，气温下降2～4℃。请注意相关防御措施。未来24小时内，各县最低气温1℃～10℃，最高气温10～22℃。",
-                        artTime: "2019-11-25T08:35:55.000+0000",
-                        artImage: NP,
-                        customer: {
-                            cusName:"光明网",
-                        }
-                    },
-                ],
+                artTypes: ['推荐'],
+                tinyArticles: [ ],
                 hotArticles: [
-                    { artId: '1', artTitle: 'This is the template title of news', artImageUrl: NP},
-                    { artId: '2', artTitle: 'This is the template title of news', artImageUrl: ''},
-                    { artId: '3', artTitle: 'This is the template title of news', artImageUrl: ''},
-                    { artId: '4', artTitle: 'This is the template title of news', artImageUrl: NP},
-                    { artId: '5', artTitle: 'This is the template title of news', artImageUrl: NP},
+                    { artId: '8071', artTitle: 'Loading......', artImage: NP},
                 ],
                 customer: {
 

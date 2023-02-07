@@ -15,7 +15,7 @@
 
 <script>
     import SearchPanel from '../common/SearchPanel'
-    import SampleImg from '../../assets/image/Sample.png'
+    import SampleImg from '../../assets/image/User.svg'
     import { jumpInCurPage, jumpInNewPage } from "../../util/PageJump";
     import { quitLogin } from "../../control/Self";
 
@@ -34,7 +34,7 @@
         },
         methods: {
             jumpToIndex: function() {
-                jumpInCurPage('/');
+                jumpInCurPage('/index');
             },
             jumpToSelf: function() {
                 if(this.loginState) {

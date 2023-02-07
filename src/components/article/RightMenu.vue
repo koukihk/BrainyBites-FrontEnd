@@ -23,20 +23,15 @@
         data: function () {
             return {
                 hotArticle: {
-                    title: '相关知识',
+                    title: 'Loading',
                     hotArticles: [
-                        { artId: '1', artTitle: 'This is the template title of news', artImage: NP},
-                        { artId: '2', artTitle: 'This is the template title of news', artImage: ''},
-                        { artId: '3', artTitle: 'This is the template title of news', artImage: ''},
-                        { artId: '4', artTitle: 'This is the template title of news', artImage: NP},
-                        { artId: '5', artTitle: 'This is the template title of news', artImage: NP},
-                        { artId: '6', artTitle: 'This is the template title of news', artImage: NP},
+                        { artId: '8071', artTitle: 'Loading......', artImage: NP},
                     ]
                 },
                 articleAuthor: {
-                    cusId: 6,
-                    cusName: '中国新闻网',
-                    cusAvatarUrl: 'https://p3.pstatp.com/large/97d001bf3f3cba72913',
+                    cusId: 8071,
+                    cusName: 'Default',
+                    cusAvatarUrl: '../../assets/image/User.svg',
                 },
             }
         }

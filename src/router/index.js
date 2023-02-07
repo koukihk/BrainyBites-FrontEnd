@@ -18,6 +18,12 @@ const routes = [
     meta: { title: "首页 | Brainy Bites" }
   },
   {
+    path: '/index',
+    name: 'IndexView',
+    component: IndexView,
+    meta: { title: "首页 | Brainy Bites" }
+  },
+  {
     path: '/search/:key',
     name: 'SearchView',
     component: SearchView,

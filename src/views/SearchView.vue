@@ -123,12 +123,7 @@
 
                 ],
                 hotArticles: [
-                    { artId: '1', artTitle: 'This is the template title of news', artImageUrl: NP},
-                    { artId: '2', artTitle: 'This is the template title of news', artImageUrl: ''},
-                    { artId: '3', artTitle: 'This is the template title of news', artImageUrl: ''},
-                    { artId: '4', artTitle: 'This is the template title of news', artImageUrl: NP},
-                    { artId: '5', artTitle: 'This is the template title of news', artImageUrl: NP},
-                    { artId: '6', artTitle: 'This is the template title of news', artImageUrl: NP},
+                    { artId: '8071', artTitle: 'Loading......', artImage: NP},
                 ],
                 customer: {
 
