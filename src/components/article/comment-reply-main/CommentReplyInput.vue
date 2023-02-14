@@ -19,7 +19,6 @@
 <script>
     import WangEditor from 'wangeditor'
     // import SampleImg from '../../../assets/image/User.svg'
-    // import SampleImg from '@/assets/image/User.svg'
 
     export default {
         name: "CommentReplyInput",

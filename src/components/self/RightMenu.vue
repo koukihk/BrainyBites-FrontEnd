@@ -3,11 +3,11 @@
         <div class="achievement-panel">
             <div class="follower-followee">
                 <div class="follow" >
-                    <span class="follow-num">{{info.followNum}}</span>
+                    <span class="follow-num">{{ info.followNum }}</span>
                     <span class="follow-tip">关注了</span>
                 </div>
                 <div  class="follow">
-                    <span class="follow-num">{{info.fanNum}}</span>
+                    <span class="follow-num">{{ info.fanNum }}</span>
                     <span class="follow-tip">粉丝</span>
                 </div>
             </div>
@@ -16,19 +16,19 @@
             <div class="achievement">
                 <i class="el-icon-star-on icon"></i>
                 <span>阅读了</span>
-                <span class="achievement-num">{{info.readNum}}</span>
+                <span class="achievement-num">{{ info.readNum }}</span>
                 <span>篇文章 </span>
             </div>
             <div class="achievement">
                 <i class="el-icon-edit icon"></i>
                 <span>发表了</span>
-                <span class="achievement-num">{{info.artEditNum}}</span>
+                <span class="achievement-num">{{ info.artEditNum }}</span>
                 <span>篇文章</span>
             </div>
             <div class="achievement">
                 <i class="el-icon-star-on icon"></i>
                 <span>编辑了</span>
-                <span class="achievement-num">{{info.comEditNum + info.repEditNum}}</span>
+                <span class="achievement-num">{{ info.comEditNum + info.repEditNum }}</span>
                 <span>次评论 </span>
             </div>
         </div>

@@ -7,15 +7,16 @@ import ArticleView from "../views/ArticleView"
 import SelfView from '../views/SelfView'
 import PortView from "../views/PortView";
 import EditView from "../views/EditView";
+import AboutView from "../views/AboutView";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'IndexView',
-    component: IndexView,
-    meta: { title: "首页 | Brainy Bites" }
+    name: 'PortViewBase',
+    component: PortView,
+    meta: { title: "认证 | Brainy Bites" }
   },
   {
     path: '/index',
@@ -39,7 +40,7 @@ const routes = [
     path: '/self/:cusId',
     name: 'SelfView',
     component: SelfView,
-    meta: { title: "我的 | Brainy Bites" }
+    meta: { title: "用户 | Brainy Bites" }
   },
   {
     path: '/port',
@@ -52,8 +53,13 @@ const routes = [
     name: 'EditView',
     component: EditView,
     meta: { title: "编辑 | Brainy Bites" }
+  },
+  {
+    path: '/about',
+    name: 'AboutView',
+    component: AboutView,
+    meta: { title: "关于 | Brainy Bites" }
   }
-
 ];
 
 const router = new VueRouter({

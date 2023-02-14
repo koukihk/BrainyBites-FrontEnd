@@ -73,7 +73,7 @@
     import { addNewArt } from "../control/Edit";
     export default {
         name: "EditView.vue",
-        components: {TopBar},
+        components: { TopBar },
         mounted: function() {
             getCusBasicInfo(0)
                 .then((response) => {
@@ -105,7 +105,6 @@
                     artType: this.form.type,
                     artImageUrl: ''
                 };
-                // this.$message.info(article.artTitle)
                 addNewArt(article)
                     .then(
                         (response) => {
@@ -119,7 +118,7 @@
                     )
             },
             cancelCreate: function () {
-                jumpInCurPage('/')
+                jumpInCurPage('/index')
             }
         },
         data: function () {
@@ -127,7 +126,7 @@
                 customer: {
 
                 },
-                message: 'message',
+                message: '',
                 menus: [
                     'head',  // 标题
                     'bold',  // 粗体

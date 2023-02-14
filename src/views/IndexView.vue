@@ -49,7 +49,6 @@
                     } else {
                         jumpInCurPage('/port');
                     }
-
                 })
             getArtTypes()
                 .then((response) => {
@@ -57,11 +56,11 @@
                 })
                 .then(() => {
                     getTinyArtOnePageByType('推荐', this.page.tinyPage, this.page.tinyPageSize)
-                        .then((response) => {
+                        .then( (response) => {
                             this.tinyArticles = response.data;
                         });
                     getHotArtOnePage(this.page.hotPage, this.page.hotPageSize)
-                        .then((response) => {
+                        .then( (response) => {
                             this.hotArticles = response.data;
                         });
                 });
@@ -118,7 +117,7 @@
                 if (scrollHeight <= (document.documentElement.scrollTop + 5)) {
                     this.page.tinyPage += 1;
                     getTinyArtOnePageByType(this.artTypes[this.page.menuCurIndex], this.page.tinyPage, this.page.tinyPageSize)
-                        .then((response) => {
+                        .then( (response) => {
                             for (let i = 0; i < response.data.length; i++) {
                                 this.tinyArticles.push(response.data[i]);
                             }
@@ -157,14 +156,12 @@
                     hotPage: 0,
                     hotPageSize: 5
                 },
-                artTypes: ['推荐'],
+                artTypes: [ ],
                 tinyArticles: [ ],
                 hotArticles: [
-                    { artId: '8071', artTitle: 'Loading......', artImage: NP},
+                    { artId: '8071', artTitle: 'Loading......', artImageUrl: ''},
                 ],
-                customer: {
-
-                }
+                customer: { }
             }
         }
     }

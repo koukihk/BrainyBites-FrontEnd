@@ -10,11 +10,11 @@
                     <div style="text-align: left; font-weight: 500; font-size: 18px;">
                         <el-button type="text" @click="jumpToCus(comment.customer.cusId)">{{comment.customer.cusName}}</el-button>
                     </div>
-                    <!--<div class="content">{{comment.comContent}}</div>-->
+                    <!--<div class="content">{{ comment.comContent }}</div>-->
                     <div class="content" v-html="comment.comContent"></div>
                     <div class="info">
                         <span>{{ date(comment.comTime) }}</span>
-                        <!--<span>{{comment.comLikeNum}}</span>-->
+                        <!--<span>{{ comment.comLikeNum }}</span>-->
                         <el-button type="text" @click="addCancelReply(comment.comId)">
                             <span v-show="control.add.type == 1 && control.add.id == comment.comId">收起</span>
                             <span v-show="control.add.type != 1 || control.add.id != comment.comId">评论</span>
@@ -48,9 +48,9 @@
 <script>
     import CommentReplyInput from "./comment-reply-main/CommentReplyInput";
     import ReplyMain from "./comment-reply-main/ReplyMain";
-    import {transUTCtoLocal} from "../../util/TimeHandler";
-    import {addNewCom, cusAddReply} from "../../control/Discuss";
-    import {jumpInNewPage} from "../../util/PageJump";
+    import { transUTCtoLocal } from "../../util/TimeHandler";
+    import { addNewCom, cusAddReply } from "../../control/Discuss";
+    import { jumpInNewPage } from "../../util/PageJump";
 
     /**
      * /src/components/article/comment-reply-main/ 路径下包含了 CommentReplyMain 模块需要的子组件
