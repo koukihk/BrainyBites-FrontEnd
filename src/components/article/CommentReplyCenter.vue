@@ -58,7 +58,7 @@
     export default {
         name: "CommentReplyCenter",
         components: { ReplyMain, CommentReplyInput },
-        props: ["comments", 'customer'],
+        props: ["comments", 'customer', 'artId'],
         methods: {
             cancelMessage: function() {
                 this.control.add.id = -1;
@@ -98,7 +98,7 @@
                 let comment = {
                     comContent: message,
                     comCusId: this.customer.cusId,
-                    comArtId: this.comments[0].comArtId,
+                    comArtId: this.artId,
                 };
                 addNewCom(comment)
                     .then((response) => {

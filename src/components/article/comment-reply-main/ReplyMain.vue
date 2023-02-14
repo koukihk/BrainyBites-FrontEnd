@@ -12,7 +12,7 @@
                         <span style="font-weight:400; font-size:16px;" v-if="reply.repRepId !== null"> 回复 </span>
                         <el-button type="text" v-if="reply.repRepId !== null" @click="jumpToCus(findReplyTarget(reply.repRepId).cusId)">{{ findReplyTarget(reply.repRepId).cusName }}</el-button>
                     </div>
-                    <!--<div class="content">{{reply.repContent}}</div>-->
+                    <!--<div class="content">{{ reply.repContent }}</div>-->
                     <div class="content" v-html="reply.repContent"></div>
                     <div class="info">
                         <span>{{ date(reply.repTime) }}</span>
@@ -44,12 +44,12 @@
 
 <script>
     import CommentReplyInput from "./CommentReplyInput";
-    import {transUTCtoLocal} from "../../../util/TimeHandler";
-    import {cusAddReply} from "../../../control/Discuss";
-    import {jumpInNewPage} from "../../../util/PageJump";
+    import { transUTCtoLocal } from "../../../util/TimeHandler";
+    import { cusAddReply } from "../../../control/Discuss";
+    import { jumpInNewPage } from "../../../util/PageJump";
     export default {
         name: "ReplyMain",
-        components: {CommentReplyInput},
+        components: { CommentReplyInput },
         props: ['replys', 'comId', 'add', 'customer'],
         methods: {
             replyHandleCurrentChange(val) {

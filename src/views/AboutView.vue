@@ -5,7 +5,7 @@
     </header>
     <main>
       <div class="content">
-        <img src="../assets/image/Slogan.png"/>
+        <img alt="Knowledge creates a better world" src="../assets/image/Slogan.png"/>
         <h2>我们是谁</h2>
         <div class="block">
           <p>
@@ -33,7 +33,7 @@
         <h2>Who we are</h2>
         <div class="block">
           <p>
-            Brainy Brainy Bites is a global knowledge community website that aims to collect and disseminate knowledge in the field of computer science. Our vision is to create a user-centric platform for knowledge sharing that encourages computer science enthusiasts, students, teachers, and professionals from around the world to share their knowledge and experience, thereby helping each other to grow and develop.
+            Brainy Bites is a global knowledge community website that aims to collect and disseminate knowledge in the field of computer science. Our vision is to create a user-centric platform for knowledge sharing that encourages computer science enthusiasts, students, teachers, and professionals from around the world to share their knowledge and experience, thereby helping each other to grow and develop.
           </p>
         </div>
         <h2>Our features</h2>
