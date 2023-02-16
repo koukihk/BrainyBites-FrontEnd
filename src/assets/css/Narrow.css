@@ -20,7 +20,7 @@ main {
     margin: 70px auto 10px;
     position: relative;
     z-index: 1;
-    height: 1000px;
+    height: auto;
 }
 
 /*nav {*/

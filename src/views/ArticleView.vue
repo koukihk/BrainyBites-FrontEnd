@@ -10,7 +10,6 @@
             </article>
             <aside>
                 <editor-brief class="editor-brief" :articleAuthor="artMain.customer" :artSelfStatus="artMain.cusArtBehavior" :customer="customer" v-on:editor="jumpToCustomer"></editor-brief>
-                <edit-entrance class="edit-entrance"></edit-entrance>
                 <hot-article :title="page.hotTitle" :hot-articles="hotArticles"
                              v-on:refresh="refreshHot" v-on:jump="jumpToArticle"></hot-article>
             </aside>
@@ -23,10 +22,8 @@
     import CommentReplyMain from "../components/article/CommentReplyCenter"
     import ArticleMain from "../components/article/ArticleCenter"
     import EditorBrief from "../components/common/EditorBrief"
-    import EditEntrance from "../components/common/EditEntrance"
     import HotArticle from "../components/common/HotArticle"
 
-    import NP from '../assets/image/NP.png'
     import { getFullArt, getHotArtOnePage } from "../control/Load"
     import { getCusBasicInfo } from "../control/Self"
     import { getComList } from "../control/Discuss"
@@ -34,7 +31,7 @@
 
     export default {
         name: "ArticleView",
-        components: { HotArticle, EditEntrance, EditorBrief, ArticleMain, CommentReplyMain, TopBar },
+        components: { HotArticle, EditorBrief, ArticleMain, CommentReplyMain, TopBar },
         mounted: function() {
             let artId = this.$route.params.artId;
             getCusBasicInfo( 0 )

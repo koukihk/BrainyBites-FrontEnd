@@ -1,6 +1,6 @@
 <template>
     <div class="article-main">
-        <div class="title">{{articleMain.artTitle}}</div>
+        <div class="title">{{ articleMain.artTitle }}</div>
         <div class="article-info">
             <span class="type"> {{ articleMain.artType }}</span>
             <span style="margin-right: 5px;">{{ articleMain.cusName }}</span>
@@ -83,10 +83,13 @@
         text-align: left;
         font-size: 18px;
         margin: 10px;
+        line-height: 28px;
     }
 
     .content >>> img {
-        text-align: center;
+        display:block;
+        margin:0 auto;
+        max-width: 705px;
     }
 
     .content {

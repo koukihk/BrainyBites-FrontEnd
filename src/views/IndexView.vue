@@ -32,7 +32,7 @@
     import EditEntrance from "../components/common/EditEntrance"
     import HotArticle from "../components/common/HotArticle"
 
-    import NP from '../assets/image/NP.png'
+    
     import { getArtTypes, getHotArtOnePage, getTinyArtOnePageByType } from "../control/Load";
     import { getCusBasicInfo } from "../control/Self";
     import { jumpInCurPage, jumpInNewPage } from "../util/PageJump";
@@ -151,7 +151,7 @@
                     menuMajorLen: 8,
                     menuTip: '更多',
                     tinyPage: 0,
-                    tinyPageSize: 10,
+                    tinyPageSize: 9,
                     hotTitle: '大家都在看',
                     hotPage: 0,
                     hotPageSize: 5
@@ -159,7 +159,7 @@
                 artTypes: [ ],
                 tinyArticles: [ ],
                 hotArticles: [
-                    { artId: '8071', artTitle: 'Loading......', artImageUrl: ''},
+                    { artId: '', artTitle: 'Loading......', artImageUrl: ''},
                 ],
                 customer: { }
             }

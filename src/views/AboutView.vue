@@ -9,51 +9,39 @@
         <h2>我们是谁</h2>
         <div class="block">
           <p>
-            Brainy Bites是一个面向全球的知识社区网站，旨在收集和传播计算机科学领域的知识。我们的愿景是打造一个以用户为中心的知识分享平台，鼓励全球范围内的计算机科学爱好者、学生、教师和专业人士分享他们的知识和经验，从而帮助彼此成长和发展。
+            Brainy Bites是一个专注于为用户提供泛科技和人文领域信息资讯的知识社区。我们不仅提供官方丰富多彩的文章，同时也鼓励用户积极分享自己的知识和趣闻。在这里，您可以阅读到最新最热门的科技资讯、人文思考和文化事件，了解各地新知。我们秉承开放、分享、协作的精神，以知识共享和交流为核心，为用户打造一个多元化的学习与交流平台。我们希望建立一个全面而具有活力的泛科技与人文知识社区，为用户提供优质、有深度和多元化的知识体验。
           </p>
         </div>
         <h2>我们的特点</h2>
         <div class="block">
           <p>
-            1. 多样性：我们欢迎来自各种不同文化背景、语言、学科背景和经验水平的人员参与。这种多样性不仅仅使我们的网站更具包容性，也使我们的知识库更加丰富多彩。
-          </p>
-          <p>
-            2. 实用性：我们的目标是将复杂的计算机科学概念转化为易于理解和实践的实用技能。我们的知识库中不仅有理论性的知识，还包括实践技能和应用案例，以帮助用户更好地掌握所学内容。
-          </p>
-          <p>
-            3. 互动性：我们鼓励用户之间的交流和互动，用户可以在网站上与其他人共享他们的见解和经验，从而促进彼此之间的学习和提高。
+            Brainy Bites是一个独具匠心的知识社区，特点在于把科技和人文领域的信息整合到一个平台上。我们提供的文章内容涵盖了科技的最新进展、人文思考的深刻见解、文化事件的细节分析等多个领域。我们的社区是一个开放的平台，任何人都可以在这里发布自己的知识分享，交流互动，与其他用户共同创造知识。
           </p>
         </div>
         <h2>我们的愿景</h2>
         <div class="block">
           <p>
-            我们希望通过Brainy Bites，打破学习计算机科学的障碍，使知识更加公平和平等地分布，并让所有人都可以充分利用技术来创造更美好的未来。
+            Brainy Bites的愿景是建立一个全面且具有活力的亚洲知识共享和交流平台，让每个人都可以通过这个平台获得高质量的知识体验。我们致力于把最好的思想和最深刻的见解带给用户，让用户在这里找到自己感兴趣的内容，获得知识上的提升和满足。
           </p>
         </div>
         <h2>Who we are</h2>
         <div class="block">
           <p>
-            Brainy Bites is a global knowledge community website that aims to collect and disseminate knowledge in the field of computer science. Our vision is to create a user-centric platform for knowledge sharing that encourages computer science enthusiasts, students, teachers, and professionals from around the world to share their knowledge and experience, thereby helping each other to grow and develop.
+            Brainy Bites is a knowledge community focused on providing users with information and information in the pan-technology and humanities fields. We not only provide official and colorful articles, but also encourage users to actively share their knowledge and anecdotes. Here, you can read the latest and hottest technology information, humanities thinking and cultural events, and learn new knowledge from all over the world. With the spirit of openness, sharing and collaboration, we focus on knowledge sharing and exchange to create a diverse learning and communication platform for our users. We hope to build a comprehensive and dynamic pan-technology and humanities knowledge community, providing users with a high-quality, in-depth and diversified knowledge experience.
           </p>
         </div>
         <h2>Our features</h2>
         <div class="block">
           <p>
-            1. Diversity: We welcome participation from people of different cultural backgrounds, languages, academic backgrounds, and experience levels. This diversity not only makes our website more inclusive but also makes our knowledge base more rich and colorful.
-          </p>
-          <p>
-            2. Practicality: Our goal is to translate complex computer science concepts into practical skills that are easy to understand and apply. Our knowledge base includes not only theoretical knowledge but also practical skills and application cases to help users better master the content they are learning.
-          </p>
-          <p>
-            3. Interactivity: We encourage interaction and communication among users. Users can share their insights and experiences with others on the website, thereby promoting mutual learning and improvement.
+            Brainy Bites is an innovative knowledge community that sets itself apart by integrating information from the fields of science, technology, and humanities into a single platform. Our content covers a wide range of topics, including the latest developments in science and technology, profound insights on humanistic thinking, and detailed analyses of cultural events. Our community is an open platform, where anyone can share their knowledge, interact, and collaborate with other users to create knowledge together.
           </p>
         </div>
-        <h2>Our hope</h2>
+        <h2>Our vision</h2>
         <div class="block">
           <p>
-            Through Brainy Bites, we hope to break down barriers to learning computer science, make knowledge more fairly and equally distributed, and empower everyone to make full use of technology to create a better future.
-          </p>
+            Our vision is to build a comprehensive and dynamic knowledge sharing and exchange platform in Asia where everyone can have a quality knowledge experience. We are committed to bringing the best ideas and deepest insights to our users, where they can find content that interests them and gain intellectual advancement and satisfaction.          </p>
         </div>
+        <span>- Brainy Bites | Knowledge creates a better world -</span>
       </div>
     </main>
   </div>
@@ -63,7 +51,7 @@
   import TopBar from "../components/index/TopBar";
 
   import { getCusBasicInfo } from "../control/Self";
-  import { jumpInCurPage, jumpInNewPage } from "../util/PageJump";
+  import { jumpInCurPage } from "../util/PageJump";
 
   export default {
     name: "AboutView",
@@ -104,6 +92,10 @@
         text-align: left;
         color: #2c3e50;
       }
+    }
+    span {
+      font-size: 12px;
+      color: gray;
     }
   }
 </style>

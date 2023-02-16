@@ -15,16 +15,18 @@
                     <el-col :span="6">
                         <el-form-item label="文章类别">
                             <el-select v-model="form.type" placeholder="文章类别">
-                                <el-option label="前端" value="前端"></el-option>
-                                <el-option label="后端" value="后端"></el-option>
-                                <el-option label="人工智能" value="人工智能"></el-option>
-                                <el-option label="深度学习" value="深度学习"></el-option>
-                                <el-option label="数据挖掘" value="数据挖掘"></el-option>
-                                <el-option label="语言学习" value="语言学习"></el-option>
+                                <el-option label="Apple" value="Apple"></el-option>
+                                <el-option label="快讯" value="快讯"></el-option>
+                                <el-option label="评测" value="评测"></el-option>
+                                <el-option label="技巧" value="技巧"></el-option>
+                                <el-option label="观点" value="观点"></el-option>
+                                <el-option label="游戏" value="游戏"></el-option>
 
-                                <el-option label="嵌入式" value="嵌入式"></el-option>
-                                <el-option label="计算机图形学" value="计算机图形学"></el-option>
-                                <el-option label="网站建设" value="网站建设"></el-option>
+                                <el-option label="应用" value="应用"></el-option>
+                                <el-option label="公司" value="公司"></el-option>
+                                <el-option label="地理" value="地理"></el-option>
+                                <el-option label="历史" value="历史"></el-option>
+                                <el-option label="杂谈" value="杂谈"></el-option>
                             </el-select>
                         </el-form-item>
                     </el-col>
@@ -112,7 +114,7 @@
                                 this.$message.info("文章添加成功");
                                 jumpInCurPage('/article/' + response.data)
                             } else {
-                                this.$message.info("文章添加失败,请检查网络或登录状态");
+                                this.$message.info("文章添加失败");
                             }
                         }
                     )

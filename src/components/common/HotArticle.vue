@@ -41,7 +41,6 @@ export default {
 </script>
 
 <style scoped>
-
     .hot-art-header {
         border-bottom: solid 1px #ebeef5;
         margin-bottom: 15px;
@@ -69,6 +68,7 @@ export default {
 
     .hot-art-body {
         margin-bottom: 10px;
+
     }
 
     .body-image {

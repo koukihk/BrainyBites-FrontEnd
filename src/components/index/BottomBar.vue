@@ -1,14 +1,14 @@
 <template>
   <div class="bottom">
-    <div>
-      <img src="../../assets/image/Logo-removebg.png"/>
-      <span class="bottom-copyright">
+    <div class="content">
+      <img alt="BrainyBites" src="../../assets/image/Logo-removebg.png"/>
+      <span>
         © 2023 | 
-        BrainyBites团队  
+        Brainy Bites团队  
         All Rights Reserved.
       </span>
     </div>
-    <span class="bottom-other">
+    <span class="other">
       <el-link href="/index">首页</el-link>&nbsp;
       <el-link href="/about" target="_blank">关于</el-link>&nbsp;
       <el-link disabled>隐私政策</el-link>&nbsp;
@@ -23,28 +23,31 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .bottom {
     display: flex;
     justify-content: space-between;
     width: 1140px;
     margin: 0 auto;
-  }
-
-  .bottom img {
-    height: 50px;
-    width: 170px;
-    flex-shrink: 0;
-  }
-
-  .bottom-copyright {
-    position: relative;
-    left: 10px;
-    bottom: 13px;
-  }
-
-  .bottom-other{
-    margin-top: 20px;
+    .content {
+      img {
+        position: relative;
+        height: 35px;
+        width: 120px;
+        flex-shrink: 0;
+        top: 25px
+      }
+      span {
+        position: relative;
+        left: 18px;
+        top: 15px;
+        font-weight: 400;
+        color: #1f2f3d;
+      }
+    }
+    .other{
+      margin-top: 38px;
+    }
   }
   
 </style>

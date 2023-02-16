@@ -24,7 +24,7 @@
     import TinyArticle from "../components/common/TinyArticle";
     // import RightMenu from "../components/index/RightMenu";
 
-    import NP from '../assets/image/NP.png'
+    
     import { getHotArtOnePage } from "../control/Load";
     import { searchContentSimple } from "../control/Search";
     import { getCusBasicInfo } from "../control/Self";
