@@ -10,8 +10,6 @@
     import EditEntrance from '../common/EditEntrance'
     import HotArticle from '../common/HotArticle'
 
-    import NP from '../../assets/image/NP.png'
-
     export default {
         name: 'RightMenu',
         components: {
@@ -22,7 +20,6 @@
                 hotArticle: {
                     title: '大家都在看',
                     hotArticles: [
-                        { artId: '8071', artTitle: 'Loading......', artImageUrl: ''},
                     ]
                 }
             }

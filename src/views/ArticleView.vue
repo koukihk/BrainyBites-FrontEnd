@@ -111,7 +111,6 @@
 
                 },
                 hotArticles: [
-                    { artId: '8071', artTitle: 'Loading......', artImageUrl: '' },
                 ],
                 comments: [
 

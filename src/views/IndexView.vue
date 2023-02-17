@@ -9,6 +9,7 @@
                                  :artClassList="artTypes" v-on:changeCurIndex="changeCurIndex"></left-menu>
             </nav>
             <article>
+                <div class="loading" v-loading="page.loading"></div>
                 <tiny-article v-for="(tinyArticle, i) in tinyArticles" :key="i" :tinyArticle="tinyArticle"
                               v-on:jump="jumpToArticle" v-on:editor="jumpToCustomer"></tiny-article>
             </article>
@@ -55,9 +56,10 @@
                     this.artTypes = response.data;
                 })
                 .then(() => {
-                    getTinyArtOnePageByType('推荐', this.page.tinyPage, this.page.tinyPageSize)
+                    getTinyArtOnePageByType(this.artTypes[this.page.menuCurIndex], this.page.tinyPage, this.page.tinyPageSize)
                         .then( (response) => {
                             this.tinyArticles = response.data;
+                            this.page.loading = false;
                         });
                     getHotArtOnePage(this.page.hotPage, this.page.hotPageSize)
                         .then( (response) => {
@@ -74,6 +76,7 @@
              * @param index 选中的类别下标
              */
             changeCurIndex: function (index) {
+                this.page.loading = true;
                 if (index >= this.page.menuMajorLen) {
                     this.page.menuCurIndex = this.page.menuMajorLen - 1;
                     let median = this.artTypes[this.page.menuMajorLen - 1];
@@ -87,6 +90,7 @@
                     getTinyArtOnePageByType(this.artTypes[this.page.menuCurIndex], this.page.tinyPage, this.page.tinyPageSize)
                     .then((response) => {
                         this.tinyArticles = response.data;
+                        this.page.loading = false;
                     });
                 window.scrollTo(0,0);
             },
@@ -114,7 +118,7 @@
                 let innerHeight = window.innerHeight;
                 let otherHeight = 70 + 15;
                 let scrollHeight = artHeight - innerHeight + otherHeight;
-                if (scrollHeight <= (document.documentElement.scrollTop + 5)) {
+                if (scrollHeight <= (document.documentElement.scrollTop + 5) && this.artTypes[this.page.menuCurIndex] != '全部') {
                     this.page.tinyPage += 1;
                     getTinyArtOnePageByType(this.artTypes[this.page.menuCurIndex], this.page.tinyPage, this.page.tinyPageSize)
                         .then( (response) => {
@@ -154,12 +158,12 @@
                     tinyPageSize: 9,
                     hotTitle: '大家都在看',
                     hotPage: 0,
-                    hotPageSize: 5
+                    hotPageSize: 5,
+                    loading: true
                 },
                 artTypes: [ ],
                 tinyArticles: [ ],
                 hotArticles: [
-                    { artId: '', artTitle: 'Loading......', artImageUrl: ''},
                 ],
                 customer: { }
             }
@@ -175,5 +179,9 @@
     /*}*/
     .edit-entrance {
         margin-bottom: 10px;
+    }
+    .loading {
+        position: relative;
+        top: 30px;
     }
 </style>

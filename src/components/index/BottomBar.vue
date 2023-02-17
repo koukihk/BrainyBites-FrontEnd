@@ -1,7 +1,6 @@
 <template>
   <div class="bottom">
     <div class="content">
-      <img alt="BrainyBites" src="../../assets/image/Logo-removebg.png"/>
       <span>
         © 2023 | 
         Brainy Bites团队  
@@ -30,23 +29,14 @@ export default {
     width: 1140px;
     margin: 0 auto;
     .content {
-      img {
-        position: relative;
-        height: 35px;
-        width: 120px;
-        flex-shrink: 0;
-        top: 25px
-      }
+
       span {
-        position: relative;
-        left: 18px;
-        top: 15px;
         font-weight: 400;
         color: #1f2f3d;
       }
     }
     .other{
-      margin-top: 38px;
+
     }
   }
   

@@ -24,7 +24,6 @@
     import TinyArticle from "../components/common/TinyArticle";
     // import RightMenu from "../components/index/RightMenu";
 
-    
     import { getHotArtOnePage } from "../control/Load";
     import { searchContentSimple } from "../control/Search";
     import { getCusBasicInfo } from "../control/Self";
@@ -113,7 +112,7 @@
                     // menuMajorLen: 8,
                     // menuTip: '更多',
                     tinyPage: 0,
-                    tinyPageSize: 10,
+                    tinyPageSize: 9,
                     hotTitle: '大家都在看',
                     hotPage: 0,
                     hotPageSize: 6,
@@ -123,7 +122,6 @@
 
                 ],
                 hotArticles: [
-                    { artId: '8071', artTitle: 'Loading......', artImageUrl: ''},
                 ],
                 customer: {
 

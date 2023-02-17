@@ -11,7 +11,6 @@
     import EditEntrance from '../common/EditEntrance'
     import HotArticle from '../common/HotArticle'
 
-    import NP from '../../assets/image/NP.png'
     import EditorBrief from "../common/EditorBrief";
 
     export default {
@@ -23,15 +22,14 @@
         data: function () {
             return {
                 hotArticle: {
-                    title: 'Loading',
+                    title: '',
                     hotArticles: [
-                        { artId: '8071', artTitle: 'Loading......', artImageUrl: ''},
                     ]
                 },
                 articleAuthor: {
-                    cusId: 8071,
-                    cusName: 'Default',
-                    cusAvatarUrl: '../../assets/image/User.svg',
+                    cusId: 8,
+                    cusName: 'BrainyBites官方',
+                    cusAvatarUrl: '../../assets/image/Authority.svg',
                 },
             }
         }

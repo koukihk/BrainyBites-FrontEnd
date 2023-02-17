@@ -57,7 +57,6 @@
     name: "AboutView",
     components: { TopBar },
     mounted: function () {
-      window.addEventListener('scroll', this.getMoreTinyArt, false)
       getCusBasicInfo(0)
           .then((response) => {
               if (response.data) {

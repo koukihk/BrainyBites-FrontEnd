@@ -20,7 +20,8 @@ main {
     margin: 80px auto 10px;
     position: relative;
     z-index: 1;
-    height: 1200px;
+    min-height: 530px;
+    height: auto;
 }
 
 nav {
@@ -52,10 +53,12 @@ aside {
 }
 
 footer {
-    background-color: #f7fbfd;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
     width: 100%;
     min-width: 1180px;
-    padding: 8px 80px;
+    padding: 0px 16px;
     box-sizing: border-box;
-    height: 90px;
+    height: 40px;
 }

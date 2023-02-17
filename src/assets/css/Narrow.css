@@ -16,10 +16,11 @@ header {
 }
 
 main {
-    width: 1030px;
-    margin: 70px auto 10px;
+    width: 1180px;
+    margin: 80px auto 10px;
     position: relative;
     z-index: 1;
+    min-height: 530px;
     height: auto;
 }
 
@@ -48,11 +49,12 @@ aside {
 }
 
 footer {
-    background-color: #f7fbfd;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
     width: 100%;
-    min-width: 1030px;
-    padding: 24px 80px;
-    bottom: 0px;
+    min-width: 1180px;
+    padding: 0px 16px;
     box-sizing: border-box;
-    height: 105px;
+    height: 40px;
 }
