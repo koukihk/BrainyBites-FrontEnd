@@ -1,5 +1,7 @@
 # **[BrainyBites-FrontEnd](https://github.com/koukihk/BrainyBites-FrontEnd)**
 
+![](https://s1.yesimg.com/2022/15c289b0051c7.png)
+
 ## Project setup
 ```
 yarn install
