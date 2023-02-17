@@ -1,6 +1,6 @@
 # **[BrainyBites-FrontEnd](https://github.com/koukihk/BrainyBites-FrontEnd)**
 
-![](https://s1.yesimg.com/2022/15c289b0051c7.png)
+![](https://s1.yesimg.com/2022/ea53db3f54b7e.png)
 
 ## Project setup
 ```
