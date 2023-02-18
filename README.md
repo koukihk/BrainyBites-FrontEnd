@@ -1,8 +1,23 @@
 # **[BrainyBites-FrontEnd](https://github.com/koukihk/BrainyBites-FrontEnd)**
 
-![](https://s1.yesimg.com/2022/ea53db3f54b7e.png)
+<img src="https://s1.yesimg.com/2022/ea53db3f54b7e.png" style="zoom: 33%;" />
+
+## Temporary Sample
+
+### Home
+
+![](https://s1.yesimg.com/2022/219f268b25d16.png)
+
+### About
+
+![](https://s1.yesimg.com/2022/eb05515064827.png)
+
+### Article
+
+![](https://s1.yesimg.com/2022/01defe2d916c6.png)
 
 ## Project setup
+
 ```
 yarn install
 ```
