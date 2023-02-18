@@ -1,10 +1,16 @@
 <template>
-    <div id="app">
+    <div id="app" class="app">
         <router-view/>
+        <el-backtop target=".app"><i class="el-icon-caret-top"></i></el-backtop>
     </div>
 </template>
 
 <style>
+    .app {
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
+import NProgress from 'nprogress';
 import IndexView from '../views/IndexView'
 import SearchView from '../views/SearchView'
 import ArticleView from "../views/ArticleView"
@@ -68,8 +68,14 @@ const router = new VueRouter({
   routes
 });
 
+router.beforeEach((to, from, next) => {
+  NProgress.start();
+  next();
+});
+
 router.afterEach( (to) => {
-  document.title = to.meta.title
+  document.title = to.meta.title;
+  NProgress.done()
 })
 
 export default router

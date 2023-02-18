@@ -30,7 +30,7 @@ main {
 /*}*/
 
 article {
-    margin-left:0;
+    margin-left: 78px;
     width: 710px;
 }
 
@@ -38,7 +38,7 @@ aside {
     width: 280px;
     position: fixed;
     top: 70px;
-    margin-left: 750px;
+    margin-left: 838px;
 }
 
 .top-bar {
