@@ -252,6 +252,7 @@
 
     .com-content {
         text-align: left;
+        line-height: 25px;
         /*height: 30px;*/
         /*overflow: hidden;*/
     }

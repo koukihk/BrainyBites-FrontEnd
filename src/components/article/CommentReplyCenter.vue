@@ -19,6 +19,9 @@
                             <span v-show="control.add.type == 1 && control.add.id == comment.comId">收起</span>
                             <span v-show="control.add.type != 1 || control.add.id != comment.comId">评论</span>
                         </el-button>
+                        <el-button type="text">
+                            <span>删除</span>
+                        </el-button>
                     </div>
                 </div>
                 <!-- 评论回复输入框 -->
@@ -206,7 +209,7 @@
 
     .content {
         font-size: 16px;
-        line-height: 20px;
+        line-height: 28px;
         text-align: left;
         word-wrap: break-word;
     }

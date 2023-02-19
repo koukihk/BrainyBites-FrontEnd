@@ -27,6 +27,7 @@
                                 <el-option label="地理" value="地理"></el-option>
                                 <el-option label="历史" value="历史"></el-option>
                                 <el-option label="杂谈" value="杂谈"></el-option>
+                                <el-option label="爱问" value="爱问"></el-option>
                             </el-select>
                         </el-form-item>
                     </el-col>
