@@ -1,7 +1,7 @@
 <template>
     <div>
         <tiny-article v-for="(tinyArticle, i) in tinyArticles" :key="i" :tinyArticle="tinyArticle"></tiny-article>
-        <span class="bottom-tip">我也是有底线哒 ~</span>
+        <span class="bottom-tip">- Brainy Bites | Knowledge creates a better world -</span>
     </div>
 </template>
 
@@ -19,5 +19,11 @@
 </script>
 
 <style scoped>
-
+    .bottom-tip {
+        font-size: 12px;
+        color: gray;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        line-height: 27px;
+    }
 </style>

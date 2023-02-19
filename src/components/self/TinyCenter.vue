@@ -53,9 +53,9 @@
                 </div>
             </div>
 
-        </float-card>>
+        </float-card>
 
-        <span class="bottom-tip">我也是有底线哒 ~</span>
+        <span class="bottom-tip">- Brainy Bites | Knowledge creates a better world -</span>
     </div>
 </template>
 
@@ -130,10 +130,6 @@
         /*margin-right: 10px;*/
     }
 
-    .bottom-tip {
-        color: #888888;
-    }
-
     .float-card {
         margin-bottom: 15px;
     }
@@ -172,7 +168,7 @@
     }
 
     .title {
-        height: 60px;
+        height: 50px;
         line-height: 30px;
         font-size: 18pt;
         overflow: hidden;
@@ -269,5 +265,13 @@
         border-style: solid;
         border-radius: 3px;
         color: darkred;
+    }
+
+    .bottom-tip {
+        font-size: 12px;
+        color: gray;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        line-height: 27px;
     }
 </style>

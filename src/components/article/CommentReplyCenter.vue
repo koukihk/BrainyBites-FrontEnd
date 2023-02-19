@@ -45,6 +45,7 @@
                        class="page-switcher"
         >
         </el-pagination>
+        <span class="bottom-tip">- Brainy Bites | Knowledge creates a better world -</span>
     </div>
 </template>
 
@@ -232,4 +233,11 @@
         float: left;
         padding-bottom: 50px;
     }
+    .bottom-tip {
+    font-size: 12px;
+    color: gray;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    line-height: 27px;
+}
 </style>

@@ -4,18 +4,21 @@
             <span class="header-title">{{ title }}</span>
             <el-button class="header-refresh" type="text" @click="refreshArticles">刷新</el-button>
         </div>
-        <div class="hot-art-body clear-float" v-for="(hotArticle, i) in hotArticles" :key="i">
-            <img class="body-image" v-if="hotArticle.artImageUrl !== ''" :src="hotArticle.artImageUrl"/>
-            <span class="body-title" :class="[ hotArticle.artImageUrl !== '' ? narrowTitle : wideTitle ]"
-                  @click="jumpToArticle(hotArticle.artId)">
-                {{ hotArticle.artTitle }}
-            </span>
+        <div class="hot-art-box">
+                <div class="hot-art-body clear-float" v-for="(hotArticle, i) in hotArticles" :key="i">
+                    <img class="body-image" v-if="hotArticle.artImageUrl !== ''" :src="hotArticle.artImageUrl"/>
+                    <span class="body-title" :class="[ hotArticle.artImageUrl !== '' ? narrowTitle : wideTitle ]"
+                        @click="jumpToArticle(hotArticle.artId)">
+                        {{ hotArticle.artTitle }}
+                    </span>
+                </div>
         </div>
     </dark-card>
 </template>
 
 <script>
 import DarkCard from "./DarkCard";
+
 export default {
     components: { DarkCard },
     props: ['title', 'hotArticles'],
@@ -65,10 +68,11 @@ export default {
         font-size: 16px;
         font-weight: 500;
     }
-
+    .hot-art-box {
+        
+    }
     .hot-art-body {
         margin-bottom: 10px;
-
     }
 
     .body-image {
@@ -86,6 +90,7 @@ export default {
         overflow: hidden;
         height: 50px;
         text-align: left;
+        font-size: 15px;
     }
 
     .narrow-title {

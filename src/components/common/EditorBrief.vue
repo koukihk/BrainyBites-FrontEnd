@@ -62,7 +62,7 @@
     .editor {
         display: block;
         text-align: left;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 25px;
     }
 
