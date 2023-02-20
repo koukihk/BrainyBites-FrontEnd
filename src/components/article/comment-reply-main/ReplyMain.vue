@@ -20,6 +20,9 @@
                             <span v-show="add.type === 2 && add.id === reply.repId">收起</span>
                             <span v-show="add.type !== 2 || add.id !== reply.repId">评论</span>
                         </el-button>
+                        <el-button type="text">
+                            <span>删除</span>
+                        </el-button>
                     </div>
                 </div>
                 <!-- 评论回复输入框 -->
