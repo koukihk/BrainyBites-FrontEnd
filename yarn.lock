@@ -1937,8 +1937,8 @@
   "version" "1.0.1"
 
 "async-validator@~1.8.1":
-  "integrity" "sha1-3D4I7B/Q3dtn5ghC8CwM0c7G1/A="
-  "resolved" "https://registry.npm.taobao.org/async-validator/download/async-validator-1.8.5.tgz?cache=0&sync_timestamp=1575620599372&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fasync-validator%2Fdownload%2Fasync-validator-1.8.5.tgz"
+  "integrity" "sha512-tXBM+1m056MAX0E8TL2iCjg8WvSyXu0Zc8LNtYqrVeyoL3+esHRZ4SieE9fKQyyU09uONjnMEjrNBMqT0mbvmA=="
+  "resolved" "https://registry.npmmirror.com/async-validator/-/async-validator-1.8.5.tgz"
   "version" "1.8.5"
   dependencies:
     "babel-runtime" "6.x"
@@ -2004,8 +2004,8 @@
     "resolve" "^1.12.0"
 
 "babel-helper-vue-jsx-merge-props@^2.0.0":
-  "integrity" "sha1-Iq69OzOQIyjlEyk6jkmSs4T58bY="
-  "resolved" "https://registry.npm.taobao.org/babel-helper-vue-jsx-merge-props/download/babel-helper-vue-jsx-merge-props-2.0.3.tgz"
+  "integrity" "sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg=="
+  "resolved" "https://registry.npmmirror.com/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.3.tgz"
   "version" "2.0.3"
 
 "babel-loader@^8.0.6":
@@ -2050,8 +2050,8 @@
     "@babel/helper-define-polyfill-provider" "^0.3.3"
 
 "babel-runtime@6.x":
-  "integrity" "sha1-llxwWGaOgrVde/4E/yM3vItWR/4="
-  "resolved" "https://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.26.0.tgz"
+  "integrity" "sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g=="
+  "resolved" "https://registry.npmmirror.com/babel-runtime/-/babel-runtime-6.26.0.tgz"
   "version" "6.26.0"
   dependencies:
     "core-js" "^2.4.0"
@@ -2948,9 +2948,9 @@
     "browserslist" "^4.21.4"
 
 "core-js@^2.4.0":
-  "integrity" "sha1-OIMUafmSK97Y7iHJ3EaYXgOZMIw="
-  "resolved" "https://registry.npm.taobao.org/core-js/download/core-js-2.6.11.tgz"
-  "version" "2.6.11"
+  "integrity" "sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ=="
+  "resolved" "https://registry.npmmirror.com/core-js/-/core-js-2.6.12.tgz"
+  "version" "2.6.12"
 
 "core-js@^3.4.4":
   "integrity" "sha1-RAqDU2tFgRS5yyrBWAujd9xHBkc="
@@ -3622,10 +3622,10 @@
   dependencies:
     "batch-processor" "1.0.0"
 
-"element-ui@^2.3.6":
-  "integrity" "sha1-9rsE5bCnbqX2JGYES3dEB7pOvS0="
-  "resolved" "https://registry.npm.taobao.org/element-ui/download/element-ui-2.13.0.tgz"
-  "version" "2.13.0"
+"element-ui@^2.15.13":
+  "integrity" "sha512-LJoatEYX6WV74FqXBss8Xfho9fh9rjDSzrDrTyREdGb1h1R3uRvmLh5jqp2JU137aj4/BgqA3K06RQpQBX33Bg=="
+  "resolved" "https://registry.npmmirror.com/element-ui/-/element-ui-2.15.13.tgz"
+  "version" "2.15.13"
   dependencies:
     "async-validator" "~1.8.1"
     "babel-helper-vue-jsx-merge-props" "^2.0.0"
@@ -6402,8 +6402,8 @@
     "sort-keys" "^1.0.0"
 
 "normalize-wheel@^1.0.1":
-  "integrity" "sha1-rsiGr/2wRQcNhWRH32Ls+GFG7EU="
-  "resolved" "https://registry.npm.taobao.org/normalize-wheel/download/normalize-wheel-1.0.1.tgz"
+  "integrity" "sha512-1OnlAPZ3zgrk8B91HyRj+eVv+kS5u+Z0SCsak6Xil/kmgEia50ga7zfkumayonZrImffAxPU/5WcyGhzetHNPA=="
+  "resolved" "https://registry.npmmirror.com/normalize-wheel/-/normalize-wheel-1.0.1.tgz"
   "version" "1.0.1"
 
 "normalize.css@^8.0.1":
@@ -7647,8 +7647,8 @@
   "version" "1.4.2"
 
 "regenerator-runtime@^0.11.0":
-  "integrity" "sha1-vgWtf5v30i4Fb5cmzuUBf78Z4uk="
-  "resolved" "https://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.11.1.tgz"
+  "integrity" "sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg=="
+  "resolved" "https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz"
   "version" "0.11.1"
 
 "regenerator-runtime@^0.13.11":
@@ -7807,8 +7807,8 @@
   "version" "1.0.0"
 
 "resize-observer-polyfill@^1.5.0":
-  "integrity" "sha1-DpAg3T0hAkRY1OvSfiPkAmmBBGQ="
-  "resolved" "https://registry.npm.taobao.org/resize-observer-polyfill/download/resize-observer-polyfill-1.5.1.tgz"
+  "integrity" "sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg=="
+  "resolved" "https://registry.npmmirror.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz"
   "version" "1.5.1"
 
 "resolve-cwd@^2.0.0":
@@ -8854,8 +8854,8 @@
     "neo-async" "^2.6.0"
 
 "throttle-debounce@^1.0.1":
-  "integrity" "sha1-UYU9o3vmihVctugns1FKPEIuic0="
-  "resolved" "https://registry.npm.taobao.org/throttle-debounce/download/throttle-debounce-1.1.0.tgz"
+  "integrity" "sha512-XH8UiPCQcWNuk2LYePibW/4qL97+ZQ1AN3FNXwZRBNPPowo/NRU5fAlDCSNBJIYCKbioZfuYtMhG4quqoJhVzg=="
+  "resolved" "https://registry.npmmirror.com/throttle-debounce/-/throttle-debounce-1.1.0.tgz"
   "version" "1.1.0"
 
 "through@^2.3.6":

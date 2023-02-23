@@ -5,11 +5,11 @@
             <el-button class="header-refresh" type="text" @click="refreshArticles">刷新</el-button>
         </div>
         <div class="hot-art-box">
-            <div class="hot-art-body clear-float" v-for="(hotArticle, i) in hotArticles" :key="i">
+            <div class="hot-art-body clear-float" v-for="( hotArticle, i ) in hotArticles" :key="i">
                 <img class="body-image" v-if="hotArticle.artImageUrl !== ''" :src="hotArticle.artImageUrl"/>
                 <el-tooltip class="item" effect="dark" :content="hotArticle.artTitle">
                     <span class="body-title" :class="[ hotArticle.artImageUrl !== '' ? narrowTitle : wideTitle ]"
-                        @click="jumpToArticle(hotArticle.artId)">
+                        @click="jumpToArticle( hotArticle.artId )">
                         {{ hotArticle.artTitle }}
                     </span>
                 </el-tooltip>

@@ -10,6 +10,9 @@
             </nav>
             <article>
                 <div class="loading" v-loading="page.loading"></div>
+                <div v-if="tinyArticles.length == 0">
+                    <el-empty description="什么也没有了，休息一下再刷吧~"></el-empty>
+                </div>
                 <tiny-article v-for="(tinyArticle, i) in tinyArticles" :key="i" :tinyArticle="tinyArticle"
                               v-on:jump="jumpToArticle" v-on:editor="jumpToCustomer"></tiny-article>
             </article>
@@ -118,7 +121,7 @@
                 let innerHeight = window.innerHeight;
                 let otherHeight = 70 + 15;
                 let scrollHeight = artHeight - innerHeight + otherHeight;
-                if (scrollHeight <= (document.documentElement.scrollTop + 5) && this.artTypes[this.page.menuCurIndex] != '全部') {
+                if (scrollHeight <= (document.documentElement.scrollTop + 5) && this.artTypes[this.page.menuCurIndex] != 1) {
                     this.page.tinyPage += 1;
                     getTinyArtOnePageByType(this.artTypes[this.page.menuCurIndex], this.page.tinyPage, this.page.tinyPageSize)
                         .then( (response) => {
