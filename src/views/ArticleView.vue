@@ -6,7 +6,8 @@
         <main>
             <article>
                 <article-main :articleMain="artMain"></article-main>
-                <comment-reply-main :artId="artMain.artId" :comments="comments" :customer="customer" @quickShow="quickShow"></comment-reply-main>
+                <share :config="config"></share>
+                <comment-reply-main :artId="artMain.artId" :artCusId="artMain.artCusId" :comments="comments" :customer="customer" @quickShow="quickShow"></comment-reply-main>
             </article>
             <aside>
                 <editor-brief class="editor-brief" :articleAuthor="artMain.customer" :artSelfStatus="artMain.cusArtBehavior" :customer="customer" v-on:editor="jumpToCustomer"></editor-brief>

@@ -79,6 +79,7 @@
     .comment-reply-input {
         display: flex;
         width: 100%;
+        margin-top: 25px;
     }
 
     .avatar {

@@ -8312,6 +8312,11 @@
     "source-map-resolve" "^0.5.0"
     "use" "^3.1.0"
 
+"social-share.js@^1.0.16":
+  "integrity" "sha512-NSV6fYFft/U0fEbjXdumZGU3c2oTbnJ6Ha5eNMEEBGsJpD+nu+nbg3LiRygO5GnoNgUa/dOmJyVHb/kM4dJa6g=="
+  "resolved" "https://registry.npmmirror.com/social-share.js/-/social-share.js-1.0.16.tgz"
+  "version" "1.0.16"
+
 "sockjs-client@1.4.0":
   "integrity" "sha1-yfJWjhnI/YFztJl+o0IOC7MGx9U="
   "resolved" "https://registry.npm.taobao.org/sockjs-client/download/sockjs-client-1.4.0.tgz"
@@ -9301,6 +9306,11 @@
     "esquery" "^1.0.1"
     "lodash" "^4.17.11"
 
+"vue-github-badge@^1.0.0":
+  "integrity" "sha512-8X+FUWapnnDfs6cRUg3mCfHUf2r5arUfCSRdvbIn860oj9us3Rz3VOtioUgmfzh6EhaaYTs0Oh78EzJ+Z6uqAA=="
+  "resolved" "https://registry.npmmirror.com/vue-github-badge/-/vue-github-badge-1.0.1.tgz"
+  "version" "1.0.1"
+
 "vue-happy-scroll@^2.1.1":
   "integrity" "sha512-3Xy6L+rdpNSB214yHxiF3O/l5/CIT8pxSUBn6PBN6CG94EakwcoSyCbkCTNgjEmtJQHp6pVgUwYFYro4fU43NQ=="
   "resolved" "https://registry.npmmirror.com/vue-happy-scroll/-/vue-happy-scroll-2.1.1.tgz"
@@ -9338,6 +9348,14 @@
   "integrity" "sha1-5rFPq8DA7p/aDiy72nSzUOKOQSs="
   "resolved" "https://registry.npm.taobao.org/vue-router/download/vue-router-3.1.3.tgz?cache=0&sync_timestamp=1579092196248&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-3.1.3.tgz"
   "version" "3.1.3"
+
+"vue-social-share@^0.0.3":
+  "integrity" "sha512-zzZGloWVTE/OrEFT0oVfVxzWBvak9KLWiIRWWkPWag10PlGgxTI4o1oN+kXIT+8U3MkRVA8cQLPf5CPqDGmfqw=="
+  "resolved" "https://registry.npmmirror.com/vue-social-share/-/vue-social-share-0.0.3.tgz"
+  "version" "0.0.3"
+  dependencies:
+    "social-share.js" "^1.0.16"
+    "vue-github-badge" "^1.0.0"
 
 "vue-style-loader@^4.1.0":
   "integrity" "sha1-3t80mAbyXOtOZPOtfApE+6c1/Pg="

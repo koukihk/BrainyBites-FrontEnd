@@ -1,4 +1,3 @@
 import Mock from 'mockjs'
 
-Mock.mock(
-)
+Mock.mock()

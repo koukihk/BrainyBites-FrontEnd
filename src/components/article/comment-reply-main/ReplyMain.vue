@@ -20,7 +20,7 @@
                             <span v-show="add.type === 2 && add.id === reply.repId">收起</span>
                             <span v-show="add.type !== 2 || add.id !== reply.repId">评论</span>
                         </el-button>
-                        <el-button type="text">
+                        <el-button type="text" v-show="customer.cusId == artCusId || customer.cusId == comCusId || customer.cusId == reply.customer.cusId">
                             <span>删除</span>
                         </el-button>
                     </div>
@@ -53,7 +53,7 @@
     export default {
         name: "ReplyMain",
         components: { CommentReplyInput },
-        props: ['replys', 'comId', 'add', 'customer'],
+        props: ['replys', 'comId', 'comCusId', 'add', 'customer', 'artCusId'],
         methods: {
             replyHandleCurrentChange(val) {
                 this.control.rep.page = val;

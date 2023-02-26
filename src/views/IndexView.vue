@@ -117,6 +117,7 @@
             },
 
             getMoreTinyArt: function () {
+                // console.log('正在滑动');
                 let artHeight = document.getElementsByTagName('article')[0].offsetHeight;
                 let innerHeight = window.innerHeight;
                 let otherHeight = 70 + 15;
@@ -124,7 +125,7 @@
                 if (scrollHeight <= (document.documentElement.scrollTop + 5) && this.artTypes[this.page.menuCurIndex] != 1) {
                     this.page.tinyPage += 1;
                     getTinyArtOnePageByType(this.artTypes[this.page.menuCurIndex], this.page.tinyPage, this.page.tinyPageSize)
-                        .then( (response) => {
+                        .then((response) => {
                             for (let i = 0; i < response.data.length; i++) {
                                 this.tinyArticles.push(response.data[i]);
                             }

@@ -15,7 +15,15 @@ export function addNewCom(comment) {
     return axios.post(base + 'com', comment)
 }
 
+export function deleteCom(comment) {
+    return axios.post(base + 'com', comment)
+}
+
 export function cusAddReply(reply) {
+    return axios.post(base + 'rep', reply)
+}
+
+export function cusDeleteReply(reply) {
     return axios.post(base + 'rep', reply)
 }
 

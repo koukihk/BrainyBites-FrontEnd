@@ -8,7 +8,7 @@
                 </div>
                 <div class="comment">
                     <div style="text-align: left; font-weight: 500; font-size: 18px;">
-                        <el-button type="text" @click="jumpToCus(comment.customer.cusId)">{{comment.customer.cusName}}</el-button>
+                        <el-button type="text" @click="jumpToCus(comment.customer.cusId)">{{ comment.customer.cusName }}</el-button>
                     </div>
                     <!--<div class="content">{{ comment.comContent }}</div>-->
                     <div class="content" v-html="comment.comContent"></div>
@@ -19,7 +19,7 @@
                             <span v-show="control.add.type == 1 && control.add.id == comment.comId">收起</span>
                             <span v-show="control.add.type != 1 || control.add.id != comment.comId">评论</span>
                         </el-button>
-                        <el-button type="text">
+                        <el-button type="text" v-show="customer.cusId == artCusId || customer.cusId == comment.customer.cusId">
                             <span>删除</span>
                         </el-button>
                     </div>
@@ -31,7 +31,9 @@
                 </comment-reply-input>
             </div>
 
-            <reply-main :replys=comment.replys :commentId=comment.comId :add="control.add" :customer="customer"
+            <reply-main :replys="comment.replys" :comId="comment.comId" :comCusId="comment.customer.cusId"
+                        :add="control.add" :customer="customer"
+                        :artCusId="artCusId" 
                         @quickShow="$emit('quickShow')">
             </reply-main>
         </div>
@@ -62,7 +64,7 @@
     export default {
         name: "CommentReplyCenter",
         components: { ReplyMain, CommentReplyInput },
-        props: ["comments", 'customer', 'artId'],
+        props: ["comments", 'customer', 'artId', 'artCusId'],
         methods: {
             cancelMessage: function() {
                 this.control.add.id = -1;
