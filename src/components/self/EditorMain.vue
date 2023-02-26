@@ -7,7 +7,7 @@
                 <div class="customer-avatar"><img :src="customer.cusAvatarUrl"></div>
                 <!-- 信息 -->
                 <div class="customer-info">
-                    <span class="customer-info-name">{{customer.cusName}}</span>
+                    <span class="customer-info-name">{{ customer.cusName }}</span>
                     <span class="customer-info-style">{{ customer.cusStyle}}</span>
                     <el-button class="follow" type="primary" v-if="!isFollow"
                                :disabled="visitor.cusId === customer.cusId" @click="followCustomer">
@@ -68,11 +68,12 @@
 
     .customer-avatar img {
         width: 100%;
+        cursor: pointer;
     }
 
     .customer-info {
         height: 100px;
-        margin-top: 50px;
+        margin-top: 30px;
         float: left;
         text-align: left;
     }
@@ -82,12 +83,14 @@
         line-height: 45px;
         font-size: 30px;
         font-weight: 600;
+        cursor: pointer;
     }
 
     .customer-info-style {
         display: block;
         font-size: 16px;
         line-height: 25px;
+        cursor: pointer;
     }
 
     .el-button {
@@ -97,5 +100,6 @@
         font-size: 10pt;
         border-radius: 1px;
         display: block;
+        margin-top: 3px;
     }
 </style>
