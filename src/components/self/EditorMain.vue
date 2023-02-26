@@ -7,8 +7,12 @@
                 <div class="customer-avatar"><img :src="customer.cusAvatarUrl"></div>
                 <!-- 信息 -->
                 <div class="customer-info">
-                    <span class="customer-info-name">{{ customer.cusName }}</span>
-                    <span class="customer-info-style">{{ customer.cusStyle}}</span>
+                    <el-popconfirm title="确定要提交你的新用户名吗？">
+                        <span slot="reference" class="customer-info-name">{{ customer.cusName }}</span>
+                    </el-popconfirm>
+                    <el-popconfirm title="确定要提交你的新签名吗？">
+                        <span slot="reference" class="customer-info-style">{{ customer.cusStyle }}</span>
+                    </el-popconfirm>
                     <el-button class="follow" type="primary" v-if="!isFollow"
                                :disabled="visitor.cusId === customer.cusId" @click="followCustomer">
                         +关注</el-button>
@@ -52,6 +56,11 @@
                     width: '100%',
                     position: 'relative',
                 },
+                modify: {
+                    cusAvatarUrl: false,
+                    cusName: false,
+                    cusStyle: false
+                }
             }
         }
     }
@@ -100,6 +109,6 @@
         font-size: 10pt;
         border-radius: 1px;
         display: block;
-        margin-top: 3px;
+        margin-top: 5px;
     }
 </style>
